@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 import sys
 import subprocess
@@ -7,7 +7,7 @@ import argparse
 options = argparse.ArgumentParser(description='Sparrow wrapper.')
 options.add_argument("--format", type=str, help="format", nargs="?")
 options.add_argument('sparrow_target', metavar="target", type=str, help='Your task or name of plugin')
-options.add_argument('params', metavar="params", type=None, help="Parameters for action", nargs="+")
+options.add_argument('params', metavar="params", type=None, help="Parameters for action", nargs="*")
 args = vars(options.parse_args())
 
 sparrow_target = args["sparrow_target"]

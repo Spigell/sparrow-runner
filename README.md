@@ -1,13 +1,14 @@
 # Description
 
-simple wrapper on sparrow for better ( for my opinion ) runtime commandline
+simple wrapper for [sparrow](https://github.com/melezhik/sparrow) client.
 
 Translates
-`sparrow-runner.py bash-pssh hosts 127.0.0.1 commands "echo 1"`
+
+`sparrow-runner.py bash command "echo 1"`
 
 into
 
-`sparrow plg run bash-pssh --param hosts=127.0.0.1 --param commands="echo 1"`
+`sparrow plg run bash --param command="echo 1"`
 
 ## Supported option
 - format
